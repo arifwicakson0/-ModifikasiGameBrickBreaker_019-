@@ -1,0 +1,16 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# Create the main window
+top = tk.Tk()
+
+# Define the callback function
+def helloCallBack():
+    messagebox.showinfo("Hello Python", "Hello World")
+
+# Create a button that triggers the callback function
+B = tk.Button(top, text="Hello", command=helloCallBack)
+B.pack()
+
+# Run the application
+top.mainloop()
